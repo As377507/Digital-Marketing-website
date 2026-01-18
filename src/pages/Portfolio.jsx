@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight, TrendingUp, Eye, Users, Globe, Star, ShoppingCart } from "lucide-react";
+import "../css/Portfolio.css";
 
 const Portfolio = ({ setCurrentPage }) => {
   const projects = [

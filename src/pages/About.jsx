@@ -1,5 +1,6 @@
 import React from "react";
 import { Lightbulb, Shield, Target, Users, Award, Clock, TrendingUp, Heart } from "lucide-react";
+import "../css/About.css";
 
 const About = () => {
   const values = [

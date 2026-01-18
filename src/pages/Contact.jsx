@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Mail, Phone, MapPin, Send, Clock } from "lucide-react";
 import { z } from "zod";
+import "../css/Contact.css";
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),

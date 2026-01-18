@@ -5454,3 +5454,13 @@ body {
 .footer-cta-btn svg {
   display: inline-block;
 }
+
+html {
+  scroll-behavior: auto !important; /* Forces instant jump instead of slow slide */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}

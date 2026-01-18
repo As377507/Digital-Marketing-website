@@ -1,5 +1,6 @@
 import React from "react";
 import { Check, ArrowRight, Sparkles } from "lucide-react";
+import "../css/Pricing.css";
 
 const Pricing = ({ setCurrentPage }) => {
   const plans = [

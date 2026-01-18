@@ -1,0 +1,238 @@
+/* testimonials.css - Testimonials Page Specific Styles */
+
+.testimonials-scope .hero {
+  background: var(--brand-gradient);
+  padding: 80px 20px 120px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+/* Featured Testimonial Section */
+.testimonials-scope .featured-section {
+  padding: 60px 20px;
+  background: white;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonials-scope .featured-card {
+  max-width: 900px;
+  background: white;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border-color);
+  position: relative;
+}
+
+.testimonials-scope .quote-icon-bg {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  color: rgba(37, 99, 235, 0.1);
+}
+
+.testimonials-scope .featured-flex {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.testimonials-scope .avatar-large {
+  width: 80px;
+  height: 80px;
+  background: var(--brand-gradient);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  flex-shrink: 0;
+  color: white;
+}
+
+.testimonials-scope .star-container {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.testimonials-scope .star-icon {
+  width: 20px;
+  height: 20px;
+  fill: #facc15;
+  color: #facc15;
+}
+
+.testimonials-scope .featured-text {
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.6;
+  margin: 20px 0;
+  color: var(--text-main);
+}
+
+.testimonials-scope .author-info h4 {
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 5px;
+}
+
+.testimonials-scope .author-info p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Grid Section */
+.testimonials-scope .grid-section {
+  padding: 80px 20px;
+  background: var(--bg-muted);
+}
+
+.testimonials-scope .grid-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.testimonials-scope .grid-header h2 {
+  font-size: 2.5rem;
+  color: var(--text-main);
+}
+
+.testimonials-scope .grid-header h2 span {
+  color: var(--brand-primary);
+}
+
+.testimonials-scope .testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials-scope .mini-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease;
+}
+
+.testimonials-scope .mini-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-sm);
+}
+
+.testimonials-scope .mini-stars {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.testimonials-scope .mini-text {
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.testimonials-scope .mini-footer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 20px;
+}
+
+.testimonials-scope .avatar-small {
+  width: 50px;
+  height: 50px;
+  background: var(--brand-gradient);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+  flex-shrink: 0;
+}
+
+.testimonials-scope .mini-author h5 {
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 3px;
+}
+
+.testimonials-scope .mini-author p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Stats Bar */
+.testimonials-scope .stats-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 60px 20px;
+  background: white;
+  text-align: center;
+  gap: 30px;
+}
+
+.testimonials-scope .stat-item {
+  flex: 1;
+  min-width: 200px;
+}
+
+.testimonials-scope .stat-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--brand-primary);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.testimonials-scope .stat-label {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Bottom CTA */
+.testimonials-scope .bottom-cta {
+  background: var(--brand-gradient);
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+}
+
+.testimonials-scope .bottom-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.testimonials-scope .bottom-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonials-scope .featured-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .testimonials-scope .featured-flex .avatar-large {
+    margin: 0 auto;
+  }
+  
+  .testimonials-scope .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}

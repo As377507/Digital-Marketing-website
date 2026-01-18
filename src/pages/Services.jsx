@@ -1,5 +1,7 @@
 import React from "react";
 import { ArrowRight, CheckCircle, Search, Share2, DollarSign, Code, FileText, Mail } from "lucide-react";
+import "../css/Services.css";
+
 
 const Services = ({ setCurrentPage }) => {
 

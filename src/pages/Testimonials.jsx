@@ -1,5 +1,6 @@
 import React from "react";
 import { Star, Quote, ArrowRight } from "lucide-react";
+import "../css/Testimonials.css";
 
 const Testimonials = ({ setCurrentPage }) => {
   const testimonials = [

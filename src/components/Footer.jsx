@@ -1,5 +1,6 @@
 import React from "react";
 import { Zap, Mail, Phone, MapPin, ArrowRight, Instagram, Linkedin, Twitter, Facebook } from "lucide-react";
+import "../css/Global.css";
 
 const Footer = ({ setCurrentPage }) => {
   const quickLinks = ["Home", "About", "Services", "Portfolio"];
