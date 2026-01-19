@@ -22,21 +22,21 @@ export default function App() {
   const renderPage = () => {
     // TIP: .trim() prevents issues if there are accidental spaces in your strings
     switch (currentPage) {
-      case "Home": 
+      case "Home":
         return <Home setCurrentPage={setCurrentPage} />;
-      case "About": 
+      case "About":
         return <About />;
-      case "Services": 
-        return <Services />;
-      case "Portfolio": 
+      case "Services":
+        return <Services setCurrentPage={setCurrentPage} />;
+      case "Portfolio":
         return <Portfolio setCurrentPage={setCurrentPage} />;
-      case "Pricing": 
+      case "Pricing":
         return <Pricing setCurrentPage={setCurrentPage} />;
-      case "Testimonials": 
+      case "Testimonials":
         return <Testimonials setCurrentPage={setCurrentPage} />;
-      case "Contact": 
+      case "Contact":
         return <Contact />;
-      default: 
+      default:
         return <Home setCurrentPage={setCurrentPage} />;
     }
   };
@@ -46,7 +46,7 @@ export default function App() {
       <div className="app-layout">
         {/* Navbar remains fixed at the top */}
         <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
-        
+
         {/* main-content should have the padding-top we added in CSS */}
         <main className="main-content">
           {renderPage()}
