@@ -53,12 +53,31 @@ h1,
 h2,
 h3 {
   font-family: 'Plus Jakarta Sans', sans-serif;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
 .page-wrapper {
   padding-top: 80px;
   /* Adjust this to exactly match your Navbar height */
   margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .page-wrapper {
+    padding-top: 70px;
+  }
 }
 
 /* --- Reusable Components --- */
@@ -118,6 +137,17 @@ h3 {
   line-height: 0;
 }
 
+.badge {
+  display: inline-block;
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--brand-primary);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
 /* =========================================
    NAVBAR STYLES
    ========================================= */
@@ -143,6 +173,15 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+
+  .container,
+  .container-padding,
+  .nav-container {
+    padding: 0 16px;
+  }
 }
 
 .logo-btn {
@@ -221,13 +260,17 @@ h3 {
   top: 80px;
   left: 0;
   width: 100%;
-  background: white;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   border-bottom: 1px solid var(--border-color);
   box-shadow: var(--shadow-lg);
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+  animation: modalSlideUp 0.3s ease-out;
 }
 
 .mobile-nav-item {
@@ -246,7 +289,9 @@ h3 {
 }
 
 @media (max-width: 1024px) {
-  .desktop-nav {
+
+  .desktop-nav,
+  .desktop-only {
     display: none;
   }
 

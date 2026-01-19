@@ -20,36 +20,48 @@ const About = () => {
   return (
     <div className="about-scope">
       {/* Hero Section */}
-      {/* Add this inside your about-scope div, after the Stats Bar */}
-<section className="container-padding py-80">
-  <div className="about-story-grid">
-    <div className="story-text">
-      <span className="badge">Our Story</span>
-      <h2>Driving Digital Evolution</h2>
-      <p>
-        Founded in 2014, DigiGrowth began with a simple observation: businesses were 
-        spending thousands on digital ads without understanding their ROI. We set out 
-        to change that by bringing <b>data-transparency</b> to the forefront of marketing.
-      </p>
-      <p>
-        Today, we are a full-service powerhouse that combines creative storytelling 
-        with rigorous technical analysis. We don't just aim for clicks; we build 
-        ecosystems that turn strangers into loyal brand advocates.
-      </p>
-    </div>
-    
-    <div className="mission-box">
-      <div className="mission-card">
-        <h3>Our Mission</h3>
-        <p>To empower ambitious brands by bridging the gap between complex technology and meaningful human connection.</p>
-      </div>
-      <div className="mission-card">
-        <h3>Our Vision</h3>
-        <p>To become the global benchmark for ethical, performance-driven digital marketing by 2030.</p>
-      </div>
-    </div>
-  </div>
-</section>
+      <section className="about-hero">
+        <div className="container">
+          <h1>About DigiGrowth</h1>
+          <p style={{ maxWidth: '600px', margin: '0 auto', opacity: 0.9, fontSize: '1.2rem' }}>
+            Partnering with you to navigate the digital landscape and achieve sustainable growth.
+          </p>
+        </div>
+        <div className="wave-divider">
+          <svg viewBox="0 0 1440 120" preserveAspectRatio="none" style={{ width: '100%', height: '60px' }}>
+            <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white" />
+          </svg>
+        </div>
+      </section>
+      <section className="container-padding py-80">
+        <div className="about-story-grid">
+          <div className="story-text">
+            <span className="badge">Our Story</span>
+            <h2>Driving Digital Evolution</h2>
+            <p>
+              Founded in 2014, DigiGrowth began with a simple observation: businesses were
+              spending thousands on digital ads without understanding their ROI. We set out
+              to change that by bringing <b>data-transparency</b> to the forefront of marketing.
+            </p>
+            <p>
+              Today, we are a full-service powerhouse that combines creative storytelling
+              with rigorous technical analysis. We don't just aim for clicks; we build
+              ecosystems that turn strangers into loyal brand advocates.
+            </p>
+          </div>
+
+          <div className="mission-box">
+            <div className="mission-card">
+              <h3>Our Mission</h3>
+              <p>To empower ambitious brands by bridging the gap between complex technology and meaningful human connection.</p>
+            </div>
+            <div className="mission-card">
+              <h3>Our Vision</h3>
+              <p>To become the global benchmark for ethical, performance-driven digital marketing by 2030.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Stats Section */}
       <section className="stats-bar">

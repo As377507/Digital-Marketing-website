@@ -114,6 +114,18 @@
   }
 }
 
+@media (max-width: 640px) {
+  .stats-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 16px;
+  }
+
+  .hero-section {
+    padding: 6rem 0 4rem;
+  }
+}
+
 .stat-card {
   background: rgba(255, 255, 255, 0.1);
   padding: 2rem 1.5rem;
