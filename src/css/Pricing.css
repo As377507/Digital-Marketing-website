@@ -1,5 +1,6 @@
-/* pricing.css - Pricing Page Specific Styles */
-
+/* =========================================
+   PRICING PAGE STYLES
+   ========================================= */
 .pricing-scope .hero {
   background: var(--brand-gradient);
   padding: 100px 20px;
@@ -12,8 +13,8 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  margin: -60px auto 80px;
-  padding: 0 20px;
+  margin-top: -60px;
+  padding: 0 20px 80px;
 }
 
 .pricing-scope .plan-card {
@@ -21,17 +22,12 @@
   width: 100%;
   max-width: 380px;
   padding: 3rem 2rem;
-  border-radius: var(--radius-xl);
+  border-radius: 1.5rem;
   border: 1px solid var(--border-color);
   box-shadow: var(--shadow-lg);
   position: relative;
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease;
-}
-
-.pricing-scope .plan-card:hover {
-  transform: translateY(-5px);
 }
 
 .pricing-scope .plan-card.popular {
@@ -51,8 +47,6 @@
   border-radius: 20px;
   font-size: 0.75rem;
   font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 .pricing-scope .price-row {
@@ -60,31 +54,11 @@
   align-items: baseline;
   justify-content: center;
   margin: 1.5rem 0;
-  gap: 5px;
 }
 
 .pricing-scope .amount {
   font-size: 3.5rem;
   font-weight: 800;
-  color: var(--brand-primary);
-}
-
-.pricing-scope .currency {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--text-muted);
-}
-
-.pricing-scope .period {
-  font-size: 1rem;
-  color: var(--text-muted);
-}
-
-.pricing-scope .feature-list {
-  list-style: none;
-  padding: 0;
-  margin: 2rem 0;
-  flex-grow: 1;
 }
 
 .pricing-scope .feature-item {
@@ -93,77 +67,4 @@
   margin-bottom: 12px;
   font-size: 0.95rem;
   color: var(--text-muted);
-  align-items: flex-start;
-}
-
-.pricing-scope .feature-icon {
-  color: #10b981;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-.pricing-scope .feature-icon.disabled {
-  color: #d1d5db;
-}
-
-.pricing-scope .select-plan-btn {
-  width: 100%;
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: var(--transition);
-  border: none;
-  margin-top: auto;
-}
-
-.pricing-scope .btn-primary-plan {
-  background: var(--cta-gradient);
-  color: white;
-}
-
-.pricing-scope .btn-secondary-plan {
-  background: var(--bg-muted);
-  color: var(--brand-primary);
-  border: 1px solid var(--border-color);
-}
-
-.pricing-scope .btn-primary-plan:hover {
-  opacity: 0.9;
-  transform: translateY(-2px);
-}
-
-.pricing-scope .btn-secondary-plan:hover {
-  background: var(--brand-primary);
-  color: white;
-}
-
-/* Plan Features Header */
-.pricing-scope .plan-header {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.pricing-scope .plan-name {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 0.5rem;
-}
-
-.pricing-scope .plan-description {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .pricing-scope .pricing-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .pricing-scope .plan-card.popular {
-    transform: scale(1);
-  }
 }

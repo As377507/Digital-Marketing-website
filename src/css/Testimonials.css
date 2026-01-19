@@ -1,5 +1,6 @@
-/* testimonials.css - Testimonials Page Specific Styles */
-
+/* =========================================
+   TESTIMONIALS PAGE STYLES
+   ========================================= */
 .testimonials-scope .hero {
   background: var(--brand-gradient);
   padding: 80px 20px 120px;
@@ -8,7 +9,6 @@
   position: relative;
 }
 
-/* Featured Testimonial Section */
 .testimonials-scope .featured-section {
   padding: 60px 20px;
   background: white;
@@ -51,13 +51,6 @@
   justify-content: center;
   font-size: 2.5rem;
   flex-shrink: 0;
-  color: white;
-}
-
-.testimonials-scope .star-container {
-  display: flex;
-  gap: 5px;
-  margin-bottom: 15px;
 }
 
 .testimonials-scope .star-icon {
@@ -75,18 +68,6 @@
   color: var(--text-main);
 }
 
-.testimonials-scope .author-info h4 {
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 5px;
-}
-
-.testimonials-scope .author-info p {
-  color: var(--text-muted);
-  font-size: 0.9rem;
-}
-
-/* Grid Section */
 .testimonials-scope .grid-section {
   padding: 80px 20px;
   background: var(--bg-muted);
@@ -97,18 +78,13 @@
   margin-bottom: 50px;
 }
 
-.testimonials-scope .grid-header h2 {
-  font-size: 2.5rem;
-  color: var(--text-main);
-}
-
 .testimonials-scope .grid-header h2 span {
   color: var(--brand-primary);
 }
 
 .testimonials-scope .testimonial-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
@@ -124,19 +100,6 @@
 
 .testimonials-scope .mini-card:hover {
   transform: translateY(-5px);
-  box-shadow: var(--shadow-sm);
-}
-
-.testimonials-scope .mini-stars {
-  display: flex;
-  gap: 5px;
-  margin-bottom: 15px;
-}
-
-.testimonials-scope .mini-text {
-  color: var(--text-muted);
-  line-height: 1.6;
-  margin-bottom: 20px;
 }
 
 .testimonials-scope .mini-footer {
@@ -156,22 +119,8 @@
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  color: white;
-  flex-shrink: 0;
 }
 
-.testimonials-scope .mini-author h5 {
-  font-weight: 600;
-  color: var(--text-main);
-  margin-bottom: 3px;
-}
-
-.testimonials-scope .mini-author p {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-}
-
-/* Stats Bar */
 .testimonials-scope .stats-bar {
   display: flex;
   flex-wrap: wrap;
@@ -179,30 +128,14 @@
   padding: 60px 20px;
   background: white;
   text-align: center;
-  gap: 30px;
-}
-
-.testimonials-scope .stat-item {
-  flex: 1;
-  min-width: 200px;
 }
 
 .testimonials-scope .stat-value {
   font-size: 2.5rem;
   font-weight: 800;
   color: var(--brand-primary);
-  display: block;
-  margin-bottom: 8px;
 }
 
-.testimonials-scope .stat-label {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-/* Bottom CTA */
 .testimonials-scope .bottom-cta {
   background: var(--brand-gradient);
   padding: 80px 20px;
@@ -210,29 +143,13 @@
   color: white;
 }
 
-.testimonials-scope .bottom-cta h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.testimonials-scope .bottom-cta p {
-  font-size: 1.1rem;
-  margin-bottom: 30px;
-  opacity: 0.9;
-}
-
-/* Responsive */
 @media (max-width: 768px) {
   .testimonials-scope .featured-flex {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .testimonials-scope .featured-flex .avatar-large {
     margin: 0 auto;
-  }
-  
-  .testimonials-scope .testimonial-grid {
-    grid-template-columns: 1fr;
   }
 }
