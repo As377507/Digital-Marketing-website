@@ -48,6 +48,94 @@ Follow these steps to set up the project locally:
    ```
 5. Access the site at `http://localhost:5173`.
 
+## Tech Stack
+
+- React.js (Frontend)
+- Vite (Build Tool)
+- HTML5, CSS3, JavaScript (ES6+)
+- Tailwind CSS / Custom CSS
+- NGINX (Production Web Server)
+- Git & GitHub (Version Control)
+
+## Production Build
+
+To create a production-ready build:
+
+```bash
+npm run build
+
+# or 
+yarn build
+```
+
+## Deployment (NGINX)
+
+This project is deployed using NGINX on a Linux server.
+
+
+### Steps:
+Build the project:
+   ```bash
+   npm run build
+
+Upload or clone the project to the server:
+   ```bash
+   git clone https://github.com/As377507/Digital-Marketing-website.git
+   cd Digital-Marketing-website
+   ```
+
+## NGINX Installation
+
+NGINX is used as the production web server to host the built React application.
+
+### Install NGINX on Ubuntu / Debian:
+
+```bash
+sudo apt update
+sudo apt install nginx -y
+```
+
+### Verify NGINX Instalation:
+
+```bash
+sudo systemctl status nginx
+```
+
+### Configure NGINX
+```bash
+sudo nano /etc/nginx/sites-available/react-app
+```
+### Deploy to /var/www/html
+```bash
+   sudo rm -rf /var/www/html*
+```
+### Paste the following NGINX configuration:
+   ```bash
+   server {
+    listen 80;
+    server_name _;
+
+    root /var/www/html/Digital-Marketing-website/dist;
+    index index.html;
+
+    location / {
+        try_files $uri /index.html;
+    }
+}
+
+sudo ln -s /etc/nginx/sites-available/react-app /etc/nginx/sites-enabled/
+sudo rm -f /etc/nginx/sites-enabled/default
+sudo nginx -t
+sudo systemctl restart nginx
+
+```
+
+
+## Live Demo
+
+🌐 Live Website: http://15.206.197.167  
+📦 GitHub Repository: https://github.com/As377507/Digital-Marketing-website
+
 ## Configuration
 
 To ensure the website functions correctly, set up configuration files as needed:
