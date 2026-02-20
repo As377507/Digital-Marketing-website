@@ -20,7 +20,7 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            cd /var/www/html/Digital-Marketing-website
+            cd /var/www/Digital-Marketing-website
             git pull origin main
             npm install
             npm run build
